@@ -26,6 +26,8 @@ body {
 
 img {
 	opacity: 1.0;
+	width: 36px;
+	height: 36px;
 }
 
 .project_header_border {
@@ -42,15 +44,49 @@ img {
 
 .project_header img {
 	margin-top: 6px;
-	width: 36px;
-	height: 36px;
 }
 
 .project_header .last img {
 	margin-left: -6px;
 }
 
-.project_name {
+#project_name {
 	color: white;
 	text-shadow: 0px 1px 1px black;
+}
+
+.add_task_panel {
+	background: rgb(225,225,255); /* old browsers */
+	background: -webkit-linear-gradient(top, rgb(225,225,255), rgb(204,204,204)); /* Chrome 10+, Safari 5.1+ */
+	background: linear-gradient(top, rgb(225,225,255), rgb(204,204,204)); /* CSS3 */
+}
+
+.add_task_panel img {
+	margin-top: 8px;
+}
+
+.add_task_panel input {
+	width: 760px;
+	height: 36px;
+	border-left: 1px solid rgb(207,207,207);
+	border-top: 1px solid rgb(112,112,112);
+	border-right: none;
+	border-bottom: none;
+	font-size: medium;
+	padding-left: 16px;
+}
+
+#add_task_button {
+	height: 35px;
+	width: 140px;
+	margin-top: 8px;
+	font-size: medium;
+	color: white;
+	text-shadow: 0px 1px 1px black;
+	background: rgb(148,203,174); /* old browsers */
+	background: -webkit-linear-gradient(top, rgb(148,203,174), rgb(80,135,103)); /* Chrome 10+, Safari 5.1+ */
+	background: linear-gradient(top, rgb(148,203,174), rgb(80,135,103)); /* CSS3 */
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgb(68,117,87);
 }

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
 <![endif]-->
 <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body class="large">
 
@@ -34,7 +35,7 @@
 		<div class="span-1">
 			<img src="images/project.png"/>
 		</div>
-		<div class="span-21 project_name">
+		<div class="span-21" id="project_name">
 			Complete the test task for Ruby Garage
 		</div>
 		<div class="span-1">
@@ -46,9 +47,17 @@
 	</div>
 </div>
 
-<div class="container">
-	<div class="span-24">
-		The footer
+<div class="container add_task_panel">
+
+<!-- A panel of adding a task to the project -->
+	<div class="span-1">
+		<img src="images/plus.png"/>
+	</div>
+	<div class="span-19">
+		<input type="text" placeholder="Start typing here to create a task..."/>
+	</div>
+	<div class="span-4 last">
+		<button id="add_task_button" onclick="onAddTask()">Add Task</button>
 	</div>
 </div>
 
