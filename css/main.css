@@ -24,11 +24,12 @@ body {
 }
 
 img {
-	opacity: 0.75;
+	opacity: 1.0;
 }
 
 .project_header_border {
 	border-top: 1px solid rgb(142,173,212); /* inner top border line */
+	background: white;
 }
 
 .project_header {
@@ -36,6 +37,16 @@ img {
 	background: rgb(73,112,172); /* old browsers */
 	background: -webkit-linear-gradient(top, rgb(77,130,194), rgb(52,95,153)); /* Chrome 10+, Safari 5.1+ */
 	background: linear-gradient(top, rgb(77,130,194), rgb(52,95,153)); /* CSS3 */
+}
+
+.project_header img {
+	margin-top: 6px;
+	width: 36px;
+	height: 36px;
+}
+
+.project_header .last img {
+	margin-left: -6px;
 }
 
 .project_name {
