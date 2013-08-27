@@ -48,3 +48,19 @@ function onAddTaskButtonUp() {
 	var theButton = document.querySelector("#add_task");
 	removeClass(theButton, "button_pressed");
 }
+
+function onProjectHeaderMouseOver() {
+	var editButton = document.querySelector("#edit_button");
+	removeClass(editButton, "invisible");
+
+	var deleteButton = document.querySelector("#delete_button");
+	removeClass(deleteButton, "invisible");
+}
+
+function onProjectHeaderMouseOut() {
+	var editButton = document.querySelector("#edit_button");
+	addClass(editButton, "invisible");
+
+	var deleteButton = document.querySelector("#delete_button");
+	addClass(deleteButton, "invisible");
+}

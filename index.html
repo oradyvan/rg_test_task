@@ -28,7 +28,7 @@
 <div class="span-24"><br/></div>
 </div>
 
-<div class="container project_header">
+<div class="container project_header" onmouseover="onProjectHeaderMouseOver()" onmouseout="onProjectHeaderMouseOut()">
 	<div class="project_header_border">
 
 		<!-- A sample of a project folder goes here //-->
@@ -39,10 +39,10 @@
 			Complete the test task for Ruby Garage
 		</div>
 		<div class="span-1">
-			<img src="images/edit.png"/>
+			<img id="edit_button" class="invisible" src="images/edit.png"/>
 		</div>
 		<div class="span-1 last">
-			<img src="images/delete.png"/>
+			<img id="delete_button" class="invisible" src="images/delete.png"/>
 		</div>
 	</div>
 </div>
