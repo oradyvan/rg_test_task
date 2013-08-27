@@ -47,17 +47,23 @@ img {
 	cursor: pointer;
 }
 
-.project_header img {
+.project_icon {
 	margin-top: 6px;
+	margin-left: 6px;
+}
+
+.project_header .last {
+	margin-left: -8px;
 }
 
 .project_header .last img {
-	margin-left: -6px;
+	margin-top: 5px;
 }
 
-#project_name {
+.project_name {
 	color: white;
 	text-shadow: 0px 1px 1px black;
+	margin-left: 8px;
 }
 
 .add_task_panel {
@@ -66,12 +72,13 @@ img {
 	background: linear-gradient(top, rgb(225,225,255), rgb(204,204,204)); /* CSS3 */
 }
 
-.add_task_panel img {
+.plus_icon {
 	margin-top: 8px;
+	margin-left: 6px;
 }
 
 .add_task_panel input {
-	width: 760px;
+	width: 752px;
 	height: 36px;
 	border-left: 1px solid rgb(207,207,207);
 	border-top: 1px solid rgb(112,112,112);
@@ -79,6 +86,7 @@ img {
 	border-bottom: none;
 	font-size: medium;
 	padding-left: 16px;
+	margin-left: 8px;
 }
 
 .add_task_button {
@@ -99,4 +107,38 @@ img {
 .button_pressed {
 	background: rgb(148,203,174);
 	padding-top: 5px;
+}
+
+.tasks_list {
+	background: white;
+}
+
+.checkbox {
+	width: 16px;
+	height: 16px;
+	margin-top: 17px;
+	margin-left: 14px;
+}
+
+.task_name {
+	color: rgb(153,153,153);
+	font-size: medium;
+	padding-left: 16px;
+	border-left: 1px solid rgb(239,218,223);
+}
+
+.task_button {
+	background: none;
+	border: none;
+}
+
+.task_button img {
+	width: 16px;
+	height: 19px;
+}
+
+.task_buttons {
+	color: rgb(204,204,204);
+	border-left: 1px solid rgb(231,235,234);
+	margin-left: 20px;
 }

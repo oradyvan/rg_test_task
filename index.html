@@ -28,36 +28,48 @@
 <div class="span-24"><br/></div>
 </div>
 
+<!-- A panel of managing project -->
 <div class="container project_header" onmouseover="onProjectHeaderMouseOver()" onmouseout="onProjectHeaderMouseOut()">
 	<div class="project_header_border">
 
 		<!-- A sample of a project folder goes here //-->
 		<div class="span-1">
-			<img src="images/project.png"/>
+			<img class="project_icon" src="images/project.png"/>
 		</div>
-		<div class="span-21" id="project_name">
+		<div class="span-20 project_name">
 			Complete the test task for Ruby Garage
 		</div>
-		<div class="span-1">
-			<img id="edit_button" class="invisible" src="images/edit.png"/>
-		</div>
-		<div class="span-1 last">
-			<img id="delete_button" class="invisible" src="images/delete.png"/>
+		<div class="span-3 last">
+			<img id="edit_button" class="invisible" src="images/edit.png"/><img id="delete_button" class="invisible" src="images/delete.png"/>
 		</div>
 	</div>
 </div>
 
-<div class="container add_task_panel">
 
 <!-- A panel of adding a task to the project -->
+<div class="container add_task_panel">
 	<div class="span-1">
-		<img src="images/plus.png"/>
+		<img class="plus_icon" src="images/plus.png"/>
 	</div>
 	<div class="span-19">
 		<input type="text" placeholder="Start typing here to create a task..."/>
 	</div>
 	<div class="span-4 last">
 		<button class="add_task_button" onclick="onAddTask()" onmousedown="onAddTaskButtonDown()" onmouseup="onAddTaskButtonUp()" onmouseout="onAddTaskButtonUp()">Add Task</button>
+	</div>
+</div>
+
+
+<!-- A list of tasks in the project -->
+<div class="container tasks_list">
+	<div class="span-1">
+		<input class="checkbox" type="checkbox" value="false"/>
+	</div>
+	<div class="span-19 task_name">
+		Open this mock-up in Adobe Fireworks
+	</div>
+	<div class="span-3 last task_buttons">
+		<button class="task_button"><img src="images/updown.png"/></button>|<button class="task_button"><img src="images/edittask.png"/></button>|<button class="task_button"><img src="images/deletetask.png"/></button>
 	</div>
 </div>
 
