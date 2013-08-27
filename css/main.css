@@ -81,8 +81,8 @@ img {
 	padding-left: 16px;
 }
 
-#add_task_button {
-	height: 35px;
+.add_task_button {
+	height: 36px;
 	width: 140px;
 	margin-top: 8px;
 	font-size: medium;
@@ -97,7 +97,6 @@ img {
 }
 
 .button_pressed {
-	text-shadow: none;
 	background: rgb(148,203,174);
-	padding-top: 1px;
+	padding-top: 5px;
 }

@@ -40,13 +40,13 @@ function onAddTask() {
 }
 
 function onAddTaskButtonDown() {
-	var theButton = document.querySelector("#add_task");
+	var theButton = document.querySelector(".add_task_button");
 	addClass(theButton, "button_pressed");
 }
 
 function onAddTaskButtonUp() {
-	var theButton = document.querySelector("#add_task");
-	removeClass(theButton, "button_pressed");
+	var theButton = document.querySelector(".add_task_button");
+ 	removeClass(theButton, "button_pressed");
 }
 
 function onProjectHeaderMouseOver() {
