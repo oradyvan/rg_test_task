@@ -24,14 +24,12 @@ body {
 	margin-top: -10px;
 }
 
-img {
-	opacity: 1.0;
-	width: 36px;
-	height: 36px;
-}
-
 .invisible {
 	display: none;
+}
+
+.highlighted {
+	background: rgb(252,254,213);
 }
 
 .project_header_border {
@@ -48,16 +46,15 @@ img {
 }
 
 .project_icon {
-	margin-top: 6px;
-	margin-left: 6px;
+	width: 28px;
+	height: 28px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
-.project_header .last {
-	margin-left: -8px;
-}
-
-.project_header .last img {
-	margin-top: 5px;
+.project_actions {
+	color: rgb(82,132,191);
+	margin-left: 32px;
 }
 
 .project_name {
@@ -73,8 +70,10 @@ img {
 }
 
 .plus_icon {
-	margin-top: 8px;
-	margin-left: 6px;
+	width: 28px;
+	height: 28px;
+	margin-top: 12px;
+	margin-left: 10px;
 }
 
 .add_task_panel input {
@@ -121,10 +120,13 @@ img {
 }
 
 .task_name {
+	margin-left: 4px;
+	width: 748px;
 	color: rgb(153,153,153);
 	font-size: medium;
 	padding-left: 16px;
 	border-left: 1px solid rgb(239,218,223);
+	border-right: 1px solid rgb(231,235,234);
 }
 
 .task_button {
@@ -137,8 +139,7 @@ img {
 	height: 19px;
 }
 
-.task_buttons {
+.task_actions {
 	color: rgb(204,204,204);
-	border-left: 1px solid rgb(231,235,234);
 	margin-left: 20px;
 }

@@ -50,17 +50,23 @@ function onAddTaskButtonUp() {
 }
 
 function onProjectHeaderMouseOver() {
-	var editButton = document.querySelector("#edit_button");
-	removeClass(editButton, "invisible");
-
-	var deleteButton = document.querySelector("#delete_button");
-	removeClass(deleteButton, "invisible");
+	var group = document.querySelector(".project_actions");
+	removeClass(group, "invisible");
 }
 
 function onProjectHeaderMouseOut() {
-	var editButton = document.querySelector("#edit_button");
-	addClass(editButton, "invisible");
+	var group = document.querySelector(".project_actions");
+	addClass(group, "invisible");
+}
 
-	var deleteButton = document.querySelector("#delete_button");
-	addClass(deleteButton, "invisible");
+function onTaskMouseOver(taskNumber) {
+	var taskSelector = ".task" + taskNumber + " .task_actions";
+	var group = document.querySelector(taskSelector);
+	removeClass(group, "invisible");
+}
+
+function onTaskMouseOut(taskNumber) {
+	var taskSelector = ".task" + taskNumber + " .task_actions";
+	var group = document.querySelector(taskSelector);
+	addClass(group, "invisible");
 }
