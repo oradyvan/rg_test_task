@@ -51,22 +51,22 @@ function onAddTaskButtonUp() {
 
 function onProjectHeaderMouseOver() {
 	var group = document.querySelector(".project_actions");
-	removeClass(group, "invisible");
+	removeClass(group, "hide");
 }
 
 function onProjectHeaderMouseOut() {
 	var group = document.querySelector(".project_actions");
-	addClass(group, "invisible");
+	addClass(group, "hide");
 }
 
 function onTaskMouseOver(taskNumber) {
 	var taskSelector = ".task" + taskNumber + " .task_actions";
 	var group = document.querySelector(taskSelector);
-	removeClass(group, "invisible");
+	removeClass(group, "hide");
 }
 
 function onTaskMouseOut(taskNumber) {
 	var taskSelector = ".task" + taskNumber + " .task_actions";
 	var group = document.querySelector(taskSelector);
-	addClass(group, "invisible");
+	addClass(group, "hide");
 }
