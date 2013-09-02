@@ -60,13 +60,25 @@ function onProjectHeaderMouseOut() {
 }
 
 function onTaskMouseOver(taskNumber) {
-	var taskSelector = ".task" + taskNumber + " .task_actions";
+	// hide task icons
+	var taskRow = ".task" + taskNumber;
+	var taskSelector = taskRow + " .task_actions";
 	var group = document.querySelector(taskSelector);
 	removeClass(group, "hide");
+
+	// highlight the task row
+	group = document.querySelector(taskRow);
+	addClass(group, "highlighted");
 }
 
 function onTaskMouseOut(taskNumber) {
-	var taskSelector = ".task" + taskNumber + " .task_actions";
+	// show task icons
+	var taskRow = ".task" + taskNumber;
+	var taskSelector = taskRow + " .task_actions";
 	var group = document.querySelector(taskSelector);
 	addClass(group, "hide");
+
+	// unhighlight the task row
+	group = document.querySelector(taskRow);
+	removeClass(group, "highlighted");
 }

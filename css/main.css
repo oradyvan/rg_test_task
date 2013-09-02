@@ -24,8 +24,10 @@ body {
 	margin-top: -10px;
 }
 
+
 .highlighted {
-	background: rgb(252,254,213);
+	background-color: rgb(252,254,213);
+	cursor: pointer;
 }
 
 .project_header_border {
